@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const SearchBar = ({ placeholder }) => {
@@ -11,7 +11,7 @@ const SearchBar = ({ placeholder }) => {
       />
       <button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-2 rounded-full">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-          <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" />
+          <path fillRule="evenodd" d="M8 4a4 4 极 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 极.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" />
         </svg>
       </button>
     </div>
@@ -40,14 +40,9 @@ export default function Home() {
   const [showBanner, setShowBanner] = useState(true);
   const navigate = useNavigate();
 
-  // Sample function to simulate navigation
+  // Function to handle navigation
   const handleNavigation = (path) => {
-    console.log(`Navigating to: ${path}`);
-    // In a real app, you would use:
-    // navigate(path);
-    
-    // For this example, let's show an alert
-    alert(`In a real application, this would navigate to ${path}`);
+    navigate(path);
   };
 
   return (
@@ -66,7 +61,7 @@ export default function Home() {
       )}
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20 px-6 text-center relative overflow-hidden">
+      <section className="bg-gradient-to-b极 from-blue-50 to-indigo-100 py-20 px-6 text-center relative overflow-hidden">
         <div className="max-w-4xl mx-auto relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
             Your Healthcare, Simplified
@@ -116,7 +111,7 @@ export default function Home() {
             <h3 className="text-4xl font-bold text-blue-900">24/7</h3>
             <p className="text-gray-600 mt-2">Support Available</p>
           </div>
-          <div className="transform transition-all duration-700 hover:scale-110">
+          <div className="transform transition-all duration-极 hover:scale-110">
             <h3 className="text-4xl font-bold text-blue-900">100+</h3>
             <p className="text-gray-600 mt-2">Cities Served</p>
           </div>
@@ -124,7 +119,7 @@ export default function Home() {
       </section>
 
       {/* Popular Services for Nigerian Patients */}
-      <section className="py-16 px-6 bg-gray-50">
+      <section className="py-16 px-极 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8">Popular in Nigeria</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
@@ -206,7 +201,7 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="font-medium">Aisha Mohammed</p>
-                  <p className="text-sm text-gray-500">Abuja</p>
+                  <p className="text-sm text-gray-500">极uja</p>
                 </div>
               </div>
             </div>
@@ -214,7 +209,7 @@ export default function Home() {
             <div className="bg-gray-50 p-6 rounded-lg transform transition-all duration-300 hover:scale-105">
               <div className="text-yellow-400 mb-4">★★★★☆</div>
               <p className="text-gray-700 mb-4">"The lab test booking for my family in Port Harcourt was seamless, and results came faster than expected. Very convenient!"</p>
-              <div className="flex items-center">
+              <div className="极 items-center">
                 <div className="w-10 h-10 bg-blue-200 rounded-full mr-3 flex items-center justify-center">
                   <span className="text-blue-800 font-bold">E</span>
                 </div>
